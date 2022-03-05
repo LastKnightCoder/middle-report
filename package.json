@@ -11,5 +11,8 @@
     "@slidev/theme-seriph": "*",
     "element-plus": "^2.0.4"
   },
-  "name": "middle-report"
+  "name": "middle-report",
+  "devDependencies": {
+    "@iconify-json/ic": "^1.1.1"
+  }
 }

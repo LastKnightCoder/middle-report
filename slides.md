@@ -1,6 +1,6 @@
 ---
 theme: default
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: /begin.jpg
 highlighter: shiki
 lineNumbers: false
 layout: cover
@@ -47,9 +47,9 @@ title: 基于深度学习的<br />毫米波图像处理研究
 
 | 工作             | 完成情况 |
 | ---------------- | -------- |
-| 数据采集与处理   | √        |
-| 图像去噪处理     | √        |
-| 图像超分辨率重建 | √        |
+| 数据采集与处理   |  <ic-baseline-check-box class="text-green-500" />    |
+| 图像去噪处理     | <ic-baseline-check-box class="text-green-500" />    |
+| 图像超分辨率重建 | <ic-baseline-check-box class="text-green-500" />    |
 
 <br/>
 
@@ -119,7 +119,7 @@ title: 基于深度学习的<br />毫米波图像处理研究
 
 残差块由两个 3×3 的卷积层组成，每个卷积层之后都应用了 ReLU 激活函数，除此之外，我们在输入与输出之间引入了一条“高速公路”，可以加快模型的收敛速率，考虑到卷积层可能改变输入特征的通道大小，为了能使得输出特征与输入特征进行相加，我们需要对输入特征投影，1×1 的卷积层只改变特征的通道数，而不改变特征的大小，所以 1×1 的卷积层可以使得输入特征的通道与输出特征的通道数相同，从而实现相加。
 
-<img src="/残差块.svg" style="zoom: 50%;max-width: 100%; margin: 0 auto;" />
+<img src="/残差块.svg" style="zoom: 60%;max-width: 100%; margin: 0 auto;" />
 
 ---
 
@@ -166,7 +166,7 @@ title: 基于深度学习的<br />毫米波图像处理研究
 
 此时生成的输出由随机噪声决定，无法控制生成器的生成。
 
-<img src="/origin-gan.svg" style="zoom: 35%; max-width: 100%; margin: 0 auto;">
+<img src="/origin-gan.svg" style="zoom: 40%; max-width: 100%; margin: 0 auto;">
 
 <!--
 该网络结构由生成器和判别器两个模块组成，生成器接收一个低维的随机噪声z作为输入，z一般服从高斯分布或者均匀分布，生成器根据输入的随机噪声生成随机图像，以期望骗过判别器。判别器的作用就是判断输入的图像是真还是假，判别器要尽可能的区分真实图像与生成图像，而生成器要骗过判别器，让其无法区分自己生成的图像是真还是假。二者之间互相博弈，当二者达到平衡时，生成器生成的图像便可以假乱真，也就是说生成器生成的图像与真实的图像已经相差不大了，便达到了训练的目的，最终判别器对无论是生成器生成的图像还是真实图像，它给出的概率始终为1/2，因为此时已经无法区分真假了。
@@ -555,7 +555,7 @@ $$
 ---
 class: 'text-center'
 layout: cover
-background: https://source.unsplash.com/collection/94734567/1920x1080
+background: /end.jpg
 ---
 
 # 谢谢
