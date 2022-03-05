@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'Merriweather Sans', 'Noto Sans SC', 'Times New Roman', '黑体', '楷体';
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* background-image: linear-gradient(45deg, #19b3c7 10%, #146b8c 20%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; */
+  color: black;
+  font-weight: bolder;
+}
+
+html.dark #slide-content {
+  color: rgba(24, 24, 24, 1);
+}
+
+ul {
+  margin: 20px 0;
+}
+
+ul li {
+  font-weight: 500;
+  /* color: gray; */
+  list-style: disclosure-closed;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+ul ul, ol ul, ul ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul ul li, ol ul li {
+  list-style: circle;
+  margin-top: 5px;
+}
+
+li::marker {
+  color: #5e616d;
+}
+
+ol {
+  padding-left: 1.5em;
+  margin: 10px 0;
+}
+
+ol li {
+  list-style: decimal;
+  margin-top: 10px;
+}
+
+:not(pre) code {
+  font-size: .8em;
+  background: transparent;
+  font-weight: bolder;
+  font-family: Consolas, 'Source Code Pro', 'Fira Code';
+  border-radius: 0;
+  background-image: linear-gradient(to right, #c0392b, #8e44ad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 0;
+}
+
+:not(pre) code::before,
+:not(pre) code::after {
+  display: none;
+}
+
+.chapter h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.select-none {
+  user-select: auto !important;
+}
+
+table {
+  margin: 0 auto;
+  border: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+th {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+th, td {
+  padding: .5em 0;
+}
+
+p {
+  margin: 20px 0;
+  /* text-indent: 2em; */
+}
