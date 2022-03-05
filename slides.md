@@ -248,8 +248,8 @@ title: 基于深度学习的<br />毫米波图像处理研究
   </template>
   <template v-slot:g2>
     <div style="display: grid; grid-template-columns: 1fr 1fr;gap: 50px;">
-      <img src="m1n5-1.svg" />
-      <img src="m1n5-2.svg" />
+      <img src="/m1n5-1.svg" />
+      <img src="/m1n5-2.svg" />
     </div>
   </template>
   <template v-slot:g3>
@@ -502,7 +502,7 @@ $$
 
 两阶段网络指图像的超分辨率重建与去噪分别通过两个网络完成，分别处理去噪和超分辨率重建任务，那么就带来了新的问题，网络的前后顺序是什么，是先进行超分辨率重建，然后进行去噪，还是先进行去噪，再进行超分辨率重建？由于前文所述的去噪网络固定了图像的输入只能为 678×384，为了复用前文所述的去噪网络，本篇文章采取的是先进行去噪，然后再进行超分辨率重建的策略。
 
-<img src="two-stage-research.svg" />
+<img src="/two-stage-research.svg" />
 
 因为超分辨率重建网络是对已去噪的图像进行超分辨率，所以我们需要训练一个对去噪图像进行超分辨率重建的网络，设计的网络结构与端对端网络结构相同。
 
